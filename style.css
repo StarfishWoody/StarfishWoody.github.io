@@ -1,0 +1,506 @@
+/* This keeps everything within the body 100% width & height */
+html {
+  height: 100%;
+  width: 100%;
+}
+/* Font face is used to import fonts and name them for reference later */
+@font-face {
+  font-family: CostaText-Regular;
+  src: url(CostaText-Regular.woff2)
+}
+
+@font-face {
+  font-family: CostaText-Bold;
+  src: url(CostaText-Bold.woff2)
+}
+
+@font-face {
+  font-family: CostaDisplayWave-Bold;
+  src: url(CostaDisplayWave-Bold.woff2)
+}
+/* The asterix symbol is used for applying CSS globally to the whole page */
+* {
+  font-family: CostaText-Regular;
+  src: url(CostaText-Regular.woff2);
+}
+/* This section forces links to change their default behaviour such as not to show an underline and not changing colour after use or on hover */
+a:link { text-decoration: none; }
+a:visited { text-decoration: none; }
+a:hover { text-decoration: none; }
+a:active { text-decoration: none; }
+/* This section is used to style the coff */
+img#costaCoffeeLogo {
+  margin-right: 60px;
+  width: 78px;
+  height: 29.75px;
+}
+/* Styles the nav bar */
+.nav {
+  text-align: center;
+  position: center;
+  top: 0;
+  width: 100%;
+  max-width: 100%;
+}
+/* Styling the list elements inside the unordered list inside the nav */
+ul.nav_ul > li {
+  display: inline-block;
+}
+/* Styling a specific section of the list using its id name */
+#ourCoffees {
+  font-size: 16px;
+  font-family: CostaText-Bold;
+  color: #ffffff;
+  margin: 0px 16px;
+}
+
+#ourMenuNav {
+  font-size: 16px;
+  font-family: CostaText-Bold;
+  color: #ffffff;
+  margin: 0px 16px;
+}
+
+#costaClub {
+  font-size: 16px;
+  font-family: CostaText-Bold;
+  color: #ffffff;
+  margin: 0px 16px;
+}
+
+#orderOnline {
+  font-size: 16px;
+  font-family: CostaText-Bold;
+  color: #ffffff;
+  margin: 0px 16px;
+}
+
+#sustainability {
+  font-size: 16px;
+  font-family: CostaText-Bold;
+  color: #ffffff;
+  margin: 0px 16px;
+}
+
+#giftCards {
+  font-size: 16px;
+  font-family: CostaText-Bold;
+  color: #ffffff;
+  margin: 0px 16px;
+}
+
+#storeLocatorIcon {
+  width: 26px;
+  height: 26px;
+  margin-left: 70px;
+}
+
+#logInIcon {
+  width: 26px;
+  height: 26px;
+  margin: 0px 40px;
+}
+/* Styling the video so that it is at the top of page, covers the width of the page and is behind the other elements using the z-index */
+.vid_background_container {
+  position: absolute;
+  z-index: -1;
+  top: 0%;
+  left: 0%;
+  min-width: 100%;
+  min-height: 100%;
+  object-fit: cover;
+  height: auto;
+}
+
+.top_background {
+  font-family: CostaDisplayWave-Bold;
+  position: absolute;
+  top: 10%;
+  left: 10%;
+  z-index: 2;
+}
+
+#madeTo {
+  color: #ffffff; 
+  font-family: CostaDisplayWave-Bold; 
+  font-size: 48px;
+}
+
+#satisfyYour {
+  color: #ffffff; 
+  font-family: CostaText-Bold;
+  font-size: 20px;
+}
+
+#findACosta {
+  background: #ffffff; 
+  color: #6d1f37;
+  padding: 20px;
+  border-style: none;
+  border-radius: 110px;
+  width: 15%;
+  position: absolute;
+  margin-left: 1%;
+  margin-right: 1%;
+  margin-top: 2%;
+  font-size: 16px;
+  font-family: CostaText-Bold;
+}
+/* Hover is used to determine how an element will react when the cursor is pointed over it */
+#findACosta:hover {
+  background-color: #bc365f;
+  color: #ffffff;
+}
+
+#waveBackgrndContainer {
+  padding-top: 100px;
+}
+/* Styling the SVG, since the viewBox sets the image inside a container only the width had to be styled */
+.top_wave_backgrnd {
+  padding-top: 500px;
+  z-index: -1;
+  width: 101%;
+  height: auto;
+}
+
+#coffeeGuy {
+  padding-top: 20%;
+  width: auto;
+  height: 536px;
+}
+
+#topText {
+  color: #6d1f37; 
+  font-family: CostaDisplayWave-Bold; 
+  font-size: 48px; 
+  padding-left: 45%;
+  position: absolute; top: 700px; left: 50px;
+}
+
+#topTextTwo {
+  color: #6d1f37; 
+  font-family: CostaText-Bold;
+  font-size: 20px;
+  padding-left: 45%;
+  position: absolute; top: 830px; left: 50px;
+}
+
+#joinTheClub {
+  background: #6d1f37; 
+  color: #ffffff;
+  padding: 20px;
+  border-style: none;
+  border-radius: 110px;
+  width: 8%;
+  position: absolute;
+  margin-left: 0%;
+  margin-right: 1%;
+  margin-top: 0%;
+  font-size: 16px;
+  font-family: CostaText-Bold;
+  position: absolute; top: 930px; left: 1200px;
+}
+
+#joinTheClub:hover {
+  background-color: #bc365f;
+  color: #ffffff;
+}
+/* Sets the background image for the main section of the page */
+.main_section_background {
+  flex-direction: row;
+  background-image: url(wavy-background.png);
+  text-align: center;
+}
+
+#whatsNew {
+  z-index: 2;
+  text-align: center;
+  font-size: 30px;
+  font-family: CostaText-Bold;
+  color: #6d1f37;
+  display: block;
+  padding-top: 100px;
+  padding-bottom: 50px;
+  
+}
+/* Styles that apply to all of the boxes inside of the main section */
+.middle_boxes_section {
+  flex-direction: row;
+  background-color: ;
+  padding-top: 0px;
+  padding-left: 0px;
+  padding-right: ;
+}
+/* Styles a specific div inside of the box section of the main element */
+.middle_box_one {
+  background-color: #6d1f37;
+  color: #ffffff;
+  max-width: 330px;
+  max-height: 580px;
+  height: 580px;
+  font-size: 18px;
+  display: inline-block;
+}
+
+#middleImageOne {
+  max-width: 330px;
+  width: 330px;
+  max-height: 238px;
+  height: 238px;
+}
+
+#boxOneHeader {
+  position: center;
+  font-size: 30px;
+  font-family: CostaText-Bold;
+}
+
+#boxOneContent {
+  position: center;
+  font-size: 18px;
+}
+
+#findAnExpress {
+  background: #ffffff; 
+  color: #6d1f37;
+  padding: 20px;
+  border-style: none;
+  border-radius: 110px;
+  width: 8%;
+  right: 60.3%;
+  position: absolute;
+  font-size: 16px;
+  font-family: CostaText-Bold;
+}
+
+#findAnExpress:hover {
+  background-color: #bc365f;
+  color: #ffffff;
+}
+
+.middle_box_two {
+  background-color: #6d1f37;
+  color: #ffffff;
+  max-width: 330px;
+  max-height: 580px;
+  height: 580px;
+  font-size: 18px;
+  display: inline-block;
+}
+
+#middleImageTwo {
+  max-width: 330px;
+  width: 330px;
+  max-height: 238px;
+  height: 238px;
+}
+
+#boxTwoHeader {
+  position: center;
+  font-size: 30px;
+  font-family: CostaText-Bold;
+}
+
+#boxTwoContent {
+  position: center;
+  font-size: 18px;
+}
+
+#ourMenu {
+  background: #ffffff; 
+  color: #6d1f37;
+  padding: 20px;
+  border-style: none;
+  border-radius: 110px;
+  width: 8%;
+  right: 45.1%;
+  position: absolute;
+  font-size: 16px;
+  font-family: CostaText-Bold;
+}
+
+#ourMenu:hover {
+  background-color: #bc365f;
+  color: #ffffff;
+}
+
+.middle_box_three {
+  background-color: #6d1f37;
+  color: #ffffff;
+  max-width: 330px;
+  max-height: 580px;
+  height: 580px;
+  font-size: 18px;
+  display: inline-block;
+}
+
+#middleImageThree {
+  max-width: 330px;
+  width: 330px;
+  max-height: 238px;
+  height: 238px;
+}
+
+#boxThreeHeader {
+  position: center;
+  font-size: 30px;
+  font-family: CostaText-Bold;
+}
+
+#boxThreeContent {
+  position: center;
+  font-size: 18px;
+}
+
+#findACostaTwo {
+  background: #ffffff; 
+  color: #6d1f37;
+  padding: 20px;
+  border-style: none;
+  border-radius: 110px;
+  width: 8%;
+  right: 31.5%;
+  position: absolute;
+  font-size: 16px;
+  font-family: CostaText-Bold;
+}
+
+#findACostaTwo:hover {
+  background-color: #bc365f;
+  color: #ffffff;
+}
+
+.text_under_boxes {
+  max-width: 856px;
+  font-size: 14px;
+  position: center;
+  padding-left: 31%;
+  padding-right: 10%;
+  padding-top: 100px;
+  padding-bottom: 100px;
+  line-height: 1.5;
+  text-align: left;
+}
+
+.text_under_boxes a:link {
+  color: #6d1f37;
+}
+
+#seeHere {
+  text-align: center;
+  position: center;
+}
+/* Applying a background and background color to the footer */
+.footer_background {
+  background-color: #b51e44;
+  font-size: 18px;
+  font-family: CostaText-Regular;
+  color: #ffffff;
+}
+/* Targeting the unordered list inside of the footer so that the styling applies to each list without editing them individually */
+footer ul{
+  list-style-type: none;
+  line-height: 2;
+  display: inline;
+}
+
+footer a:link{
+  color: #ffffff;
+}
+
+footer a:visited{
+  color: #ffffff;
+}
+
+.about_us_container {
+  padding-left: 580px;
+  max-width: 230px;
+  width: 230px;
+  display: inline-block;
+}
+
+#aboutUsHeader {
+  font-size: 18px;
+  font-family: CostaText-Bold;
+}
+
+
+.dietary_info_container {
+  max-width: 230px;
+  width: 230px;
+  display: inline-block;
+}
+
+#dietaryInfoHeader {
+  font-size: 18px;
+  font-family: CostaText-Bold;
+}
+
+.gifting_container {
+  max-width: 230px;
+  width: 230px;
+  display: inline-block;
+}
+
+#giftingHeader {
+  font-size: 18px;
+  font-family: CostaText-Bold;
+}
+
+.for_business_container {
+  max-width: 230px;
+  width: 230px;
+  display: inline-block;
+}
+
+#forBusinessHeader {
+  font-size: 18px;
+  font-family: CostaText-Bold;
+}
+
+.contact_us_container {
+  max-width: 230px;
+  width: 230px;
+  display: inline-block;
+}
+
+#contactUsHeader {
+  font-size: 18px;
+  font-family: CostaText-Bold;
+}
+
+.bottom_footer {
+  background-color: #6d1f37;
+}
+
+.bottom_footer ul > li {
+  display: inline-block;
+}
+
+.bottom_footer_list {
+  padding-left: 22.5%;
+}
+
+#cookiePolicy {
+  padding-left: 50px;
+}
+
+#tAndCs {
+  padding-left: 50px;
+}
+
+#rightsReserved {
+  display: inline-block;
+  padding-left: 50px;
+  
+}
+
+#socialMediaIcons {
+  display: inline-block;
+  padding-left: 250px;
+}
+
+.footer_social_media_icons {
+  display: inline-block;
+  margin: 20px;
+}

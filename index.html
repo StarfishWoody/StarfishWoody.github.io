@@ -1,0 +1,180 @@
+<!-- Doctype is used to declare to the browser that this file is using the latest version of html -->
+<!DOCTYPE html>
+<html>
+<!-- The head element is used to store the metadata for the file -->
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width">
+  <title>The Nation's Favourite Coffee Shop | Costa Coffee (Replica)</title>
+  <link rel="icon" type="image/png" href="costa-icon.png"/>
+  <link href="style.css" rel="stylesheet" type="text/css"/>
+</head>
+<!-- The body is where the main content for the page is held -->
+<body>
+  <!-- The nav element here is used to create a nav bar at the top of the page, inside the nav there is a list containing text -->
+  <nav class='nav'>
+    <div class='nav_container'>
+      <div class='nav_list'>
+        <ul class='nav_ul'>
+          <!-- Each item in the list is given an id for better management -->
+          <li><img src='costa-coffee-logo.png' img id='costaCoffeeLogo'></li>
+          <li><a id='ourCoffees' href='https://www.costa.co.uk/our-coffees'>Our coffees</a></li>
+          <li><a id='ourMenuNav' href='https://www.costa.co.uk/our-coffees'>Our menu</a></li>
+          <li><a id='costaClub' href='https://www.costa.co.uk/our-coffees'>Costa Club</a></li>
+          <li><a id='orderOnline' href='https://www.costa.co.uk/our-coffees'>Order online</a></li>
+          <li><a id='sustainability' href='https://www.costa.co.uk/our-coffees'>Sustainability</a></li>
+          <li><a id='giftCards' href='https://www.costa.co.uk/our-coffees'>Gift cards</a></li>
+          <li><a href="https://www.costa.co.uk/locations/store-locator/map?"><img id='storeLocatorIcon' src='location-pin-icon.svg'></a></li>
+          <li><a href='https://www.costa.co.uk/costa-club/login'><img id='logInIcon' src='log-in-icon.svg'></a></li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+  <!-- A div for the video section of the website -->
+  <div class='vid_background_container'>
+    <div style='width:100%;height:100%;pointer-events:none;' class='top_background_vid'>
+      <!-- The attributes in the video element determine how many times it plays, when it plays, if it plays with volume -->
+      <video controls loop autoplay preload muted style='width:100%;height:100%;' id='kitkat-vid'>
+        <source src="mar23-kitkat-DESKTOP-hero-1600x680.mp4" type="video/mp4" preload='auto''>
+      </video>
+    </div> 
+  </div>  
+  <!-- The div for the top part of the page, below the nav bar -->
+  <div class='top_background'>
+    <h1 id='madeTo''>MADE TO MAKE<br>YOUR BREAK</h1>
+    <h5 id='satisfyYour'>Satisfy your chocolate cravings with our new made with KitKat® range. Available now for a limited time only.*</h5> 
+    <!-- A button that takes the user to another page when clicked, it is styled in CSS -->
+    <button id='findACosta' onclick="document.location='https://www.costa.co.uk/locations/store-locator/map'">Find a Costa</button>
+    <img src='coffee-guy.png' id='coffeeGuy'>
+  </div>
+
+  <!-- The div for the section on top of the video segment -->
+  <div class='wave_section'>
+  <div id='waveBackgrnd_container'>
+    <!-- The wave portion uses an SVG which is similar to an image but does not behave the same, it was given a class to be styled and positioned using CSS -->
+    <svg class='top_wave_backgrnd' width ='320' height='70' viewBox ='0 0 320 70' fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M0 536.395V6.156C21.954 2.863 45.274 0 73.493 0c34.289 0 61.351 4.23 87.525 8.32 21.562 3.37 42.136 6.582 66.27 7.592h31.228c22.342-.936 41.632-3.76 61.484-6.85v527.333H0z" fill="#F4F3EF"/></svg>
+  </div>
+    <h1 id='topText'>BUY 8 DRINKS,<br>GET 1 FREE</h1>
+    <h5 id='topTextTwo'>Any handcrafted drink, any size. On the house. Not a member yet?</h5>
+    <button id='joinTheClub' onclick="document.location='https://www.costa.co.uk/costa-club#app-promo'">Join the Club</button>
+    
+  </div>
+  <!-- The main element is used to represent the main portion of the webpage. Its use is similar to the footer -->
+  <main class='main_section'>
+    <div class='main_section_background'>
+      <h3 id='whatsNew'>What's new</h3>
+      <!-- All the boxes are put inside of one div to make global styling easier -->
+      <div class='middle_boxes_section'>
+        <!-- Each box has their own div to be styled seperately -->
+        <div class='middle_box_one'>
+          <!-- Here an image in imported that also that a link attached and it used when clicked -->
+          <a href='https://www.costa.co.uk/locations/store-locator/map?'><img id='middleImageOne' src='middle-image-one.png'></a>
+          <h3 id='boxOneHeader'>Easter faves to takeaway</h3>
+          <p id='boxOneContent'>
+            Discover our limited-edition inspired by KitKat® drinks at Costa Express. Creamy KitKat® Hot Chocolate and indulgent KitKat® Mocha, on-the-go.
+          </p>
+<!--           <button id='findAnExpress' onclick="document.location='https://www.costa.co.uk/locations/store-locator/map?'">Find an Express</button> -->
+          <button id='findAnExpress' onclick="gotoLink(findAnExpress)" value='https://www.costa.co.uk/locations/store-locator/map?'>Find an Express</button>
+        </div>
+        <div class='middle_box_two'>
+          <a href='https://www.costa.co.uk/menu/'><img id='middleImageTwo' src='middle-image-two.jpg'></a>
+          <h3 id='boxTwoHeader'>Your coffee, made a little better</h3>
+          <p id='boxTwoContent'>
+          Our new plant-based Ultimate Blend is here. With a silky, creamy texture, when paired with your usual, it's the ultimate coffee moment.
+          </p>
+          <button id='ourMenu' onclick="document.location='https://www.costa.co.uk/menu/'">Our menu</button>
+        </div>
+        <div class='middle_box_three'>
+          <a href='https://www.costa.co.uk/locations/store-locator/map?'><img id='middleImageTwo' src='middle-image-three.png'></a>
+          <h3 id='boxThreeHeader'>Our improved Signature Blend</h3>
+          <p id='boxThreeContent'>
+          We've improved the taste of our famous Signature Blend. How? By roasting our beans for longer for a more intense flavour. It's smoother, bolder, tastier, better.
+          </p>
+          <button id='findACostaTwo' onclick="document.location='https://www.costa.co.uk/locations/store-locator/map?'">Find a Costa</button>
+        </div>
+      </div>
+      <div class='text_under_boxes'>
+        <p><i>*<a id='seeHere' href='https://www.costa.co.uk/menu'>See here</a> for full calorie and allergen information. Subject to availability.
+  ®Reg. Trademark of Société des Produits Nestlé S.A. Available from 23 March to 19 April. One free KitKat® Bunny Mini per
+   every KitKat® Mocha, KitKat® Hot Chocolate and KitKat® Iced Chocolate purchased. For illustrative purposes only.
+        </i></p>
+        <!-- The i element is used to make links and text inside the paragraph italic -->
+        <p><i>**Customers to have the option to switch their milk choice to Ultimate Blend milk alternative without charge from 2 March to 3 May 2023 in selected stores. For full calorie and allergen information <a id='seeHere' href='https://www.costa.co.uk/menu'>see here</a>. Subject to availability. <a id='seeHere' href='https://www.costa.co.uk/menu'>See here</a> for full T&C's
+        </i></p>
+      </div>  
+    </div>
+  </main>
+  <!-- Similar to the main element used for sectioning the main content the footer is used for sectioning content at the bottom of the page -->
+  <footer>
+    <div class='footer_background'>
+      <div class='about_us_container'>
+        <h6 id='aboutUsHeader'>About us</h6>
+        <!-- Multiple lists are used here and placed next to each other using CSS -->
+        <ul class='about_us_list'>
+          <li><a href='https://www.costa.co.uk/our-coffees'>Our coffees</a></li>
+          <li><a href='https://www.costa.co.uk/behind-the-beans/our-story/history'>Our story</a></li>
+          <li><a href='https://www.costa.co.uk/sustainability'>Sustainability</a></li>
+          <li><a href='https://www.costafoundation.com'>Costa Foundation</a></li>
+          <li><a href='https://www.costa.co.uk/policies-and-reports'>Policies and reports</a></li>
+          <li><a href='https://swf3j.app.goo.gl/JGZwd'>Download our app</a></li>
+        </ul>
+      </div>
+      <div class='dietary_info_container'>
+        <h6 id='dietaryInfoHeader'>Dietary information</h6>
+        <ul class='dietary_info_list'>
+          <li><a href='https://www.costa.co.uk/behind-the-beans/nutrition#allergens-advice'>Nutrition & allergens</a></li>
+          <li><a href='https://www.costa.co.uk/docs/store-allergen-guide.pdf'>Store dietary information</a></li>
+          <li><a href='https://www.costa.co.uk/docs/store-allergen-guide-terryshc.pdf'>Terry's Chocolate Orange® Hot Chocolate &amp; Light Whip dietary information</a></li>
+          <li><a href='https://www.costa.co.uk/docs/express-allergen-guide.pdf'>Costa Express dietary information</a></li>
+          <li><a href='https://www.costa.co.uk/docs/ready-to-drink.pdf'>Ready to drink dietary information</a></li>
+          <li><a href='https://www.costa.co.uk/docs/costa-at-home-nutritional-info.pdf'>Costa at home dietary information</a></li>
+          <li><a href='https://www.costa.co.uk/docs/branded-nutritional-info.pdf'>Branded products dietary information</a></li>
+        </ul>
+      </div>
+      <div class='gifting_container'>
+        <h6 id='giftingHeader'>Gifting & merchandise</h6>
+        <ul class='gifting_list'>
+          <li><a href='https://gifting.costa.co.uk/?utm_source=costauksite&utm_medium=referral&utm_campaign=giftcardsfooter'>Gift cards</a></li>
+          <li><a href='https://www.costacoffeeforbusiness.co.uk/'>Gift cards for business</a></li>
+          <li><a href='https://w10.world/index.html?utm_source=costauksite&utm_medium=referral&utm_campaign=merchfooter'>Merchandise</a></li>
+        </ul>
+      </div>
+      <div class='for_business_container'>
+        <h6 id='forBusinessHeader'>For business</h6>
+        <ul class='for_business_list'>
+          <li><a href='https://www.costa.co.uk/business'>Costa Business Partners</a></li>
+          <li><a href='https://www.costa.co.uk/modern-slavery-statement'>Modern Slavery Statement</a></li>
+        </ul>
+      </div>
+      <div class='contact_us_container'> 
+        <h6 id='contactUsHeader'>Contact us</h6>
+        <ul class=contact_us_list>
+          <li><a href='https://www.costa.co.uk/faqs'>FAQs</a></li>
+          <li><a href='https://www.costa.co.uk/contact-form/'>Contact us</a></li>
+          <li><a href='https://costanewsroom.vuelio.co.uk/press/'>Press</a></li>
+          <li><a href='https://www.costacareers.co.uk/'>Careers</a></li>
+        </ul>
+      </div>
+      <div class='bottom_footer'>
+        <div class='bottom_footer_container'>
+          <ul class='bottom_footer_list'>
+            <li id='privPolicy'><a href="https://www.costa.co.uk/privacy-policy">Privacy policy</a></li>
+            <li id='cookiePolicy'><a href="https://www.costa.co.uk/cookie-policy">Cookie policy</a></li>
+            <li id='tAndCs'><a href="https://www.costa.co.uk/terms-and-conditions">Terms and conditions</a></li>
+          </ul>
+          <p id='rightsReserved'>© 2013 - 2023 Costa. All rights reserved</p>
+          <ul id='socialMediaIcons'>
+            <li class='footer_social_media_icons'><a href='https://www.facebook.com/CostaCoffee/'><img src='facebook-icon.svg'></a></li>
+            <li class='footer_social_media_icons'><a href='https://twitter.com/CostaCoffee'><img src='twitter-icon.svg'></a></li>
+            <li class='footer-social_media_icons'><a href='https://www.youtube.com/user/forcoffeelovers'><img src='youtube-icon.svg'></a></li>
+            <li class='footer-social-media-icons'><a href='https://www.instagram.com/costacoffee/'><img src='instagram-icon.svg'></a></li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </footer>
+  <!-- The script element is used to embed executable data from another file, in this example a JavaScript file is used -->
+  <script src="script.js"></script>
+
+</body>
+</html>
